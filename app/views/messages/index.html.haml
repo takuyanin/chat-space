@@ -1,1 +1,82 @@
-haha
+.notification
+.wrapper
+  .side-bar
+    .header
+      %h3.header__name
+        takuyanin
+      %ul.header__lists
+        %li.list
+          %a{:href=>""}
+            %i.fa.fa-edit.icon
+        %li.list
+          %a{:href=>""}
+            %i.fa.fa-cog.icon
+    .groups
+      .group
+        .group__name
+          hogegroup
+        .group__message
+          hogehoge
+      .group
+        .group__name
+          hogegroup
+        .group__message
+          hogehoge
+      .group
+        .group__name
+          hogegroup
+        .group__message
+          hogehoge
+      .group
+        .group__name
+          hogegroup
+        .group__message
+          hogehoge
+  .chat
+    .header
+      .left-header
+        .left-header__title
+          Sampleグループ
+        %ul.left-header__member
+          Member: &nbsp
+          -#$nbspは空白スペースを表現
+          %li.member
+            foge
+          %li.member
+            foge
+          %li.member
+            foge
+          %li.member
+            foge
+      .right-header
+        %a.right-header__botton{:href=>"#"}
+          Edit
+    .messages
+      .message
+        .upper-message
+          .upper-message__user-name
+            takuyanin &nbsp
+          .upper-message__date
+            2018/07/05 06:24:57
+        .lower-message
+          %p.lower-message__content
+            i see
+      .message
+        .upper-message
+          .upper-message__user-name
+            takuyanin &nbsp
+          .upper-message__date
+            2018/07/05 06:24:57
+        .lower-message
+          %p.lower-message__content
+            i see
+      .message
+        .upper-message
+          .upper-message__user-name
+            takuyanin &nbsp
+          .upper-message__date
+            2018/07/05 06:24:57
+        .lower-message
+          %p.lower-message__content
+            i see
+    .form
