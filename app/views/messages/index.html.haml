@@ -1,16 +1,16 @@
-.notification
 .wrapper
   .side-bar
     .header
       %h3.header__name
-        takuyanin
+        = current_user.name
       %ul.header__lists
         %li.list
           %a{:href=>""}
             %i.fa.fa-edit.icon
         %li.list
-          %a{:href=>""}
-            %i.fa.fa-cog.icon
+          = link_to edit_user_path(current_user) do
+            / %i.fa.fa-cog.icon
+            = fa_icon "cog", class: "icon"
     .groups
       .group
         .group__name
@@ -39,7 +39,7 @@
           Sampleグループ
         %ul.left-header__member
           Member: &nbsp
-          -#$nbspは空白スペースを表現
+          -#&nbspは空白スペースを表現
           %li.member
             foge
           %li.member
