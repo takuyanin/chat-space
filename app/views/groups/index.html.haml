@@ -1,43 +1,12 @@
 .wrapper
-  .side-bar
-    .header
-      %h3.header__name
-        = current_user.name
-      %ul.header__lists
-        %li.list
-          %a{:href=>""}
-            %i.fa.fa-edit.icon
-        %li.list
-          = link_to edit_user_path(current_user) do
-            / %i.fa.fa-cog.icon
-            = fa_icon "cog", class: "icon"
-    .groups
-      .group
-        .group__name
-          hogegroup
-        .group__message
-          hogehoge
-      .group
-        .group__name
-          hogegroup
-        .group__message
-          hogehoge
-      .group
-        .group__name
-          hogegroup
-        .group__message
-          hogehoge
-      .group
-        .group__name
-          hogegroup
-        .group__message
-          hogehoge
+
+  = render 'shared/side_bar'
   .chat
     .header
       .left-header
         .left-header__title
           Sampleグループ
-        %ul.left-header__member
+        %ul.left-header__members
           Member: &nbsp
           -#&nbspは空白スペースを表現
           %li.member
@@ -80,3 +49,10 @@
           %p.lower-message__content
             i see
     .form
+      .form__message
+        type a message
+      .form__mask
+        .form__mask__image
+        .hidden
+      .form__submit
+        Send
